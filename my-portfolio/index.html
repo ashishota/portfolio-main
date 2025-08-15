@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Ashis Ranjan Hota - Frontend Developer</title>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">John Doe</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Frontend Developer</h1>
+        <p>Creating beautiful and functional web experiences</p>
+        <a href="#about" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <div class="profile-pic">Your Photo Here</div>
+          </div>
+          <div class="about-text">
+            <h3>Hello! I'm Ashis Ranjan Hota</h3>
+            <p>
+              I'm a passionate frontend developer with a love for creating
+              clean, responsive, and user-friendly web applications. I enjoy
+              working with modern web technologies and am always eager to learn
+              new skills.
+            </p>
+            <p>
+              My goal is to build websites that not only look great but also
+              provide excellent user experiences. I pay attention to details and
+              strive to write clean, maintainable code.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon">🌐</div>
+            <h3>HTML5</h3>
+            <p>Semantic markup and modern HTML features</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">🎨</div>
+            <h3>CSS3</h3>
+            <p>Responsive design, Flexbox, Grid, animations</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">⚡</div>
+            <h3>JavaScript</h3>
+            <p>ES6+, DOM manipulation, async programming</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">⚛️</div>
+            <h3>React</h3>
+            <p>Components, hooks, state management</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">Project Screenshot</div>
+            <div class="project-info">
+              <h3>Todo App</h3>
+              <p>
+                A simple todo application built with HTML, CSS, and JavaScript.
+                Features include adding, deleting, and marking tasks as
+                complete.
+              </p>
+              <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">Project Screenshot</div>
+            <div class="project-info">
+              <h3>Go Rest Console</h3>
+              <p>
+                A responsive application that fetches data from an API and
+                displays the data to the user with HTTP status Code.
+              </p>
+              <p><strong>Technologies:</strong> HTML, CSS, JavaScript, API</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">Project Screenshot</div>
+            <div class="project-info">
+              <h3>Landing Page</h3>
+              <p>
+                A modern, responsive landing page with smooth animations and
+                mobile-first design approach.
+              </p>
+              <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-form">
+          <form onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
